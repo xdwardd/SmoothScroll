@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6rem;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /*smooth scroll*/
+   /* overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;*/
+}
+
+.navbar{
+    background: rgba(0,0,0, 0.6);
+    display: flex;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar ul li a:hover{
+    color: skyblue;
+}
+
+section {
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* scroll-snap-align: center;*/
+
+}
+section h1 {
+   
+    font-size: 3rem;
+    color: #fff;
+
+}
+
+section p{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+section#home{
+    background-image: url(./img/pic1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#courses{
+    background-image: url(./img/pic4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#about{
+    background-image: url(./img/pic2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#contacts{
+    background-image: url(./img/pic3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
